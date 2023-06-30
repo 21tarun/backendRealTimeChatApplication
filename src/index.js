@@ -6,7 +6,7 @@ require("dotenv").config();
 const userModel = require("./model/userModel")
 // const path = require("path");
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 const userRoutes = require("./routes/userRoutes");
 
 ////////////////////// Socket.io Connection \\\\\\\\\\\\\\\\\\\\\\\\\\
