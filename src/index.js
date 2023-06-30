@@ -18,7 +18,7 @@ app.use(express.json());
 app.use("/api/auth", userRoutes);
 app.use("/api/messages", userRoutes);
 
-mongoose.connect(process.env.MONGO_URI,
+mongoose.connect("mongodb+srv://tarun21:tarun1616@cluster0.h0l8mir.mongodb.net/realtimechat",
     { useNewUrlParser: true, useUnifiedTopology: true }
 ).then(() => {
     console.log("DataBase Connected Succesfully !");
